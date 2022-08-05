@@ -1,0 +1,24 @@
+import get from "./utils/getElement.js";
+import getUser from "./utils/fetchUser.js";
+import displayUser from "./utils/displayUser.js";
+
+
+
+const img = get('.user-img');
+const title = get('.user-title');
+const value = get('.user-value');
+const btn = get('.btn');
+const icon = [...document.querySelectorAll('.icon')];
+
+
+
+
+
+const showUser = async() =>{
+
+   const person = await getUser();
+    displayUser(person);
+}
+
+window.addEventListener('DOMContentLoaded',showUser);
+btn.addEventListener('click',showUser);

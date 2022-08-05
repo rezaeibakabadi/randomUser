@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Person</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <div class="block bcg-black"></div>
+      <div class="block">
+        <div class="container">
+          <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="random user" class="user-img"/>
+          <p class="user-title">My Name Is </p>
+          <p class="user-value">Reza EibakAbadi</p>
+          <div class="values-list">
+            <!-- single icons -->
+            <button class="icon active" data-lable="name">
+              <span class="far fa-user"></span>
+            </button>
+            <!-- end of single icons -->
+            <!-- single icons -->
+            <button class="icon" data-lable="email">
+              <span class="far fa-envelope-open"></span>
+            </button>
+            <!-- end of single icons -->
+            <!-- single icons -->
+            <button class="icon" data-lable="age">
+              <span class="far fa-calendar-times"></span>
+            </button>
+            <!-- end of single icons -->
+            <!-- single icons -->
+            <button class="icon" data-lable="street">
+              <span class="far fa-map"></span>
+            </button>
+            <!-- end of single icons -->
+            <!-- single icons -->
+            <button class="icon" data-lable="phone">
+              <span class="fas fa-phone"></span>
+            </button>
+            <!-- end of single icons -->
+            <!-- single icons -->
+            <button class="icon" data-lable="password">
+              <span class="fas fa-user-lock"></span>
+            </button>
+            <!-- end of single icons -->
+          </div>
+          <button class="btn" type="button">Random User</button>
+        </div>
+      </div>
+    
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
